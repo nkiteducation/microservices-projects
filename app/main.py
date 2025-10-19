@@ -1,9 +1,11 @@
 import logging
 from contextlib import asynccontextmanager
 
+from app.core import logger
 from fastapi import FastAPI
 from fastapi.responses import ORJSONResponse
 
+logger.setup_logging()
 log = logging.getLogger(__name__)
 
 
