@@ -9,8 +9,6 @@ COPY pyproject.toml /usr/src/
 RUN uv pip install --system .
 
 COPY ./app /usr/src/app
-COPY ./scripts /usr/src/scripts
-COPY ./alembic.ini /usr/src
 
 EXPOSE 8000
 
